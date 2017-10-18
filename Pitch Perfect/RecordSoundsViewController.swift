@@ -28,9 +28,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     }
 
     @IBAction func recordAudio(_ sender: Any) {
-        recordingLabel.text = "Recording in Progress"
-        stopRecordingButton.isEnabled = true
-        recordButton.isEnabled = false
+        setRecordingScreenUIState(stopRecordingButtonEnabled: true, recordButtonEnabled: false, recordingLabelText: "Recording in Progress")
         
         let dirPath = NSSearchPathForDirectoriesInDomains(.documentDirectory,.userDomainMask, true)[0] as String
         let recordingName = "recordedVoice.wav"
@@ -48,12 +46,18 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     }
 
     @IBAction func stopRecording(_ sender: Any) {
-        recordButton.isEnabled = true
-        stopRecordingButton.isEnabled = false
-        recordingLabel.text = "Tap to Record"
+        setRecordingScreenUIState(stopRecordingButtonEnabled: false, recordButtonEnabled: true, recordingLabelText: "Tap to Record")
         audioRecorder.stop()
         let audioSession = AVAudioSession.sharedInstance()
         try! audioSession.setActive(false)
+    }
+    
+    // Put the recording screen UI in proper state
+    // Called by recordAudio and stopRecording IBActions
+    func setRecordingScreenUIState(stopRecordingButtonEnabled: Bool, recordButtonEnabled: Bool, recordingLabelText: String) {
+        stopRecordingButton.isEnabled = stopRecordingButtonEnabled
+        recordButton.isEnabled = recordButtonEnabled
+        recordingLabel.text = recordingLabelText
     }
     
     func audioRecorderDidFinishRecording(_ recorder: AVAudioRecorder, successfully flag: Bool) {
