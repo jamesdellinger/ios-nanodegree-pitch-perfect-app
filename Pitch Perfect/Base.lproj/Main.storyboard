@@ -23,8 +23,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wUW-9X-wvl">
-                                <rect key="frame" x="16" y="226" width="343" height="279"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wUW-9X-wvl">
+                                <rect key="frame" x="16" y="236.5" width="343" height="259"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ekg-iE-nol">
                                         <rect key="frame" x="94" y="0.0" width="155" height="155"/>
@@ -47,7 +47,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vLI-kO-iB0">
-                                        <rect key="frame" x="118.5" y="169" width="106.5" height="20.5"/>
+                                        <rect key="frame" x="118.5" y="159" width="106.5" height="20.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to Record" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E4C-CG-hvw">
                                                 <rect key="frame" x="0.0" y="0.0" width="106.5" height="20.5"/>
@@ -58,7 +58,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="RyH-Pr-rX9">
-                                        <rect key="frame" x="139.5" y="215" width="64" height="64"/>
+                                        <rect key="frame" x="139.5" y="195" width="64" height="64"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Tu-PY-U3e">
                                                 <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
