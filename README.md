@@ -8,7 +8,7 @@
 
 This repository contains the Pitch Perfect app project for the Intro to iOS App Development with Swift course in Udacity's iOS Nanodegree.
 
-
+Pitch Perfect is an iPhone app that will allow users to record their voice and will then modulate the recorded audio to sound like a chipmunk or Darth Vader. This app will also let the user speed up or slow down the rate of playback, and experience fun echo and reverb effects.
 
 ### Project Grading and Evaluation
 
